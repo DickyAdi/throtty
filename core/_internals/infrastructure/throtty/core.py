@@ -43,7 +43,7 @@ class ThrottyCore:
         if redis_pool:
             if not isinstance(redis_pool, ConnectionPool):
                 raise TypeError(
-                    f"Expected type of {type(redis_pool)}. Got {type(redis_pool)}"
+                    f"Expected type of {type(ConnectionPool)}. Got {type(redis_pool)}"
                 )
             self._storage = StorageType.redis
             self._storage_instance = ThrottyRedis(

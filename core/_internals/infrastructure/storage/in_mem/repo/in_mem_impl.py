@@ -3,8 +3,6 @@ from sortedcontainers import SortedList
 import asyncio
 from typing import Optional
 
-# from _internals.interfaces.storage import StorageInterface, WindowData, BucketState
-# from _internals.domain.interfaces.storage import StorageInterface
 from .....domain.interfaces.storage import StorageInterface
 from .....domain.models import BucketState, WindowData
 
