@@ -1,14 +1,14 @@
 from datetime import timedelta
 from typing import Optional
 
-from _internals.domain.interfaces.storage import StorageInterface
-from _internals.domain.interfaces.rate_limit import RateLimitAlgorithm
-from _internals.domain.services.algorithm import (
+from ...domain.interfaces.storage import StorageInterface
+from ...domain.interfaces.rate_limit import RateLimitAlgorithm
+from ...domain.services.algorithm import (
     SlidingWindowCounter,
     SlidingWindowLog,
     TokenBucket,
 )
-from _internals.domain.models.rate_limit_result import RateLimitResult
+from ...domain.models.rate_limit_result import RateLimitResult
 
 
 class CheckRateLimitUC:

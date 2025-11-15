@@ -1,10 +1,10 @@
 from datetime import timedelta
-import time
+from time import time
 
-from _internals.domain.interfaces.storage import StorageInterface
-from _internals.domain.models.bucket import BucketState
-from _internals.domain.interfaces.rate_limit import RateLimitAlgorithm
-from _internals.domain.models import RateLimitResult
+from ....domain.interfaces.storage import StorageInterface
+from ....domain.models.bucket import BucketState
+from ....domain.interfaces.rate_limit import RateLimitAlgorithm
+from ....domain.models import RateLimitResult
 
 
 class TokenBucket(RateLimitAlgorithm):

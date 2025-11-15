@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from _internals.domain.exceptions import RateLimitExceeded
+from ...domain.exceptions import RateLimitExceeded
 
 
 @dataclass
@@ -15,3 +15,6 @@ class RateLimitResult:
     def check(self) -> None:
         if not self.allowed:
             raise RateLimitExceeded()
+
+    def dump(self) -> dict:
+        return {k: str(v).encode("utf-8") for k, v in self.__dict__.items()}

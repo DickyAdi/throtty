@@ -4,8 +4,9 @@ import asyncio
 from typing import Optional
 
 # from _internals.interfaces.storage import StorageInterface, WindowData, BucketState
-from _internals.domain.interfaces.storage import StorageInterface
-from _internals.domain.models import BucketState, WindowData
+# from _internals.domain.interfaces.storage import StorageInterface
+from .....domain.interfaces.storage import StorageInterface
+from .....domain.models import BucketState, WindowData
 
 
 class InMemStorage(StorageInterface):
