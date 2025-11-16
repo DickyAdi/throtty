@@ -22,7 +22,7 @@ pip install throtty
 
 ```python
 from fastapi import FastAPI
-from throtty import Throtty, rule
+from throtty.core import Throtty, rule
 
 # Initialize Throtty with in-memory storage
 limiter = Throtty()
@@ -44,7 +44,7 @@ async def limited_endpoint():
 **In-Memory Storage (Single Server)**
 
 ```python
-from throtty import Throtty
+from throtty.core import Throtty
 
 limiter = Throtty()
 ```
@@ -80,7 +80,7 @@ limiter.install(app)  # Must be called to activate rate limiting
 **Using Decorators (Recommended)**
 
 ```python
-from throtty import rule
+from throtty.core import rule
 
 @app.get("/api/users")
 @rule("/api/users", "100/60")  # 100 requests per minute
@@ -212,7 +212,7 @@ Retry-After: 45
 
 ```python
 from fastapi import FastAPI, Header
-from throtty import Throtty, rule
+from throtty.core import Throtty, rule
 from typing import Optional
 
 # Initialize with Redis for distributed systems
