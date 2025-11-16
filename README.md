@@ -429,4 +429,4 @@ MIT License - see LICENSE file for details
 
 ## Changelog
 
-See CHANGELOG file for details
+See [CHANGELOG](https://github.com/dickyadi/throtty/blob/master/CHANGELOG.md) file for details
