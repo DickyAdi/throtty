@@ -1,0 +1,19 @@
+# CODEOWNERS
+*       @DickyAdi
+
+# Core library code
+/core/  @DickyAdi
+
+# Tests
+/test/  @DickyAdi
+
+# Documentation
+*.md    @DickyAdi
+/docs/  @DickyAdi
+
+# Configuration files
+pyproject.toml  @DickyAdi
+poetry.lock     @DickyAdi
+
+# CI/CD
+/.github/       @DickyAdi
