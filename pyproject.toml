@@ -1,23 +1,19 @@
-[project]
+[tool.poetry]
 name = "throtty"
 version = "0.0.1"
-description = "Rate limite library for ASGI application"
-authors = [
-    {name = "DickyAdi dickyadi44@gmail.com"}
-]
-license = {text = "MIT"}
+description = "Rate limit library for ASGI application"
+authors = ["DickyAdi <dickyadi44@gmail.com>"]
+license = "MIT"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "sortedcontainers (>=2.4.0,<3.0.0)",
-    "redis (>=7.0.1,<8.0.0)"
-]
+packages = [{include = "core"}]
 
-[dependency-groups]
-dev = [
-    "pytest (>=9.0.1,<10.0.0)"
-]
+[tool.poetry.dependencies]
+python = "^3.12"
+sortedcontainers = "^2.4.0"
+redis = "^7.0.1"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
