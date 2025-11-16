@@ -429,11 +429,4 @@ MIT License - see LICENSE file for details
 
 ## Changelog
 
-### v0.0.1
-
-- Initial release
-- Support for FastAPI
-- In-memory and Redis storage
-- Multiple rate limiting algorithms
-- Flexible path matching with regex
-- Custom key extraction functions
+See CHANGELOG file for details
