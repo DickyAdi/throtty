@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Optional
 
-from models import WindowData, BucketState
+from ..models import WindowData, BucketState
 
 
 class StorageInterface(ABC):

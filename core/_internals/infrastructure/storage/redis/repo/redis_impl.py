@@ -1,8 +1,8 @@
 from typing import Optional
 import json
 
-from _internals.domain.models import BucketState, WindowData
-from _internals.domain.interfaces.storage import StorageInterface
+from .....domain.models import BucketState, WindowData
+from .....domain.interfaces.storage import StorageInterface
 from ..redis import ThrottyRedis
 
 

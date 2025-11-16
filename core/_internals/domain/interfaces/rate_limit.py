@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from datetime import timedelta
 
-from _internals.domain.models import RateLimitResult
+from ...domain.models import RateLimitResult
 
 
 class RateLimitAlgorithm(ABC):

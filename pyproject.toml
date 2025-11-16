@@ -1,0 +1,24 @@
+[project]
+name = "throtty"
+version = "0.0.1"
+description = "Rate limite library for ASGI application"
+authors = [
+    {name = "DickyAdi dickyadi44@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sortedcontainers (>=2.4.0,<3.0.0)",
+    "redis (>=7.0.1,<8.0.0)"
+]
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.1,<10.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
